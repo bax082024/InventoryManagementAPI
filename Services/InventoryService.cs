@@ -21,22 +21,30 @@ namespace InventoryManagementAPI.Services
     public IEnumerable<Item> GetItems() => _items;
 
     public Item GetItemById(int id) => _items.FirstOrDefault(item => item.Id == id);
-        public void Additem(Item newItem)
-        {
-            newItem.Id = _items.Max(i => i.Id) + 1;
-            _items.Add(newItem);
-        }
+    public void Additem(Item newItem)
+    {
+        newItem.Id = _items.Max(i => i.Id) + 1;
+        _items.Add(newItem);
+    }
 
-        public void DeleteItem(int id)
+    public void DeleteItem(int id)
+    {
+        var item = GetItemById(id);
+        if (item != null)
         {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateItem(Item UpdatedItem)
-        {
-            throw new NotImplementedException();
+          _items.Remove(item);
         }
     }
+
+    public void UpdateItem(Item UpdatedItem)
+    {
+      existingItem.Name = updatedItem.Name;
+      existingItem.Quantity = updatedItem.Quantity;
+      existingItem.Price = updatedItem.Price;
+      existingItem.Description = updatedItem.Description;
+
+    }
+  }
 
 
 
