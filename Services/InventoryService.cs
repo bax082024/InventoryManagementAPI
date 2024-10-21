@@ -23,20 +23,11 @@ namespace InventoryManagementAPI.Services
     public Item GetItemById(int id) => _items.FirstOrDefault(item => item.Id == id);
         public void Additem(Item newItem)
         {
-            throw new NotImplementedException();
+            newItem.Id = _items.Max(i => i.Id) + 1;
+            _items.Add(newItem);
         }
 
         public void DeleteItem(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Item GetItemById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Item> GetItems()
         {
             throw new NotImplementedException();
         }
