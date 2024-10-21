@@ -18,7 +18,34 @@ namespace InventoryManagementAPI.Services
     }
 
 
-  }
+    public IEnumerable<Item> GetItems() => _items;
+
+    public Item GetItemById(int id) => _items.FirstOrDefault(item => item.Id == id);
+        public void Additem(Item newItem)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteItem(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Item GetItemById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Item> GetItems()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateItem(Item UpdatedItem)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 
 
