@@ -22,15 +22,21 @@ namespace InventoryManagementAPI.Controllers
     }
 
     [HttpGet("{id}")]
-      public ActionResult<Item> GetItem(int id)
+    public ActionResult<Item> GetItem(int id)
+    {
+      var item = _inventoryService.GetItemById(id);
+      if (item == null)
       {
-        var item = _inventoryService.GetItemById(id);
-        if (item == null)
-        {
-          return NotFound();
-        }
-        return Ok(item);
+        return NotFound();
       }
+      return Ok(item);
+    }
+
+    [HttpPost]
+    public ActionResult AddItem([FromBody] Item newItem)
+    {
+      _inventoryService.AddItem(newItem);
+    }
 
   }
 
