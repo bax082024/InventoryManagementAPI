@@ -4,7 +4,7 @@ using InventoryManagementAPI.Models;
 
 namespace InventoryManagementAPI.Controllers
 {
-  [Route("api/[controller]")]
+  [Route("api/items")]
   [ApiController]
   public class ItemsController : ControllerBase
   {
@@ -48,6 +48,7 @@ namespace InventoryManagementAPI.Controllers
       }
       _inventoryService.UpdateItem(updatedItem);
       return NoContent();
+
     }
 
     [HttpDelete("{id}")]
@@ -56,8 +57,6 @@ namespace InventoryManagementAPI.Controllers
       _inventoryService.DeleteItem(id);
       return NoContent();
     }
-
-
 
 
   }

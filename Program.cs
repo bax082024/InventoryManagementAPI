@@ -1,10 +1,17 @@
-using InventoryManagementAPI.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
-builder.Services.AddSingleton<IInventoryService, InventoryService>();
+builder.Services.AddControllers();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseHttpsRedirection();
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run(); 
