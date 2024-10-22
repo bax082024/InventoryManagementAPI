@@ -39,7 +39,7 @@ namespace InventoryManagementAPI.Controllers
       return CreatedAtAction(nameof(GetItem), new {id = newItem.Id}, newItem);
     }
     
-    [HttpPost]
+    [HttpPut]
     public ActionResult UpdateItem(int id, [FromBody] Item updatedItem)
     {
       if (id != updatedItem.Id )
