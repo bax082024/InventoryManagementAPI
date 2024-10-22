@@ -22,10 +22,17 @@ namespace InventoryManagementAPI.Services
       };
     }
 
-
     public IEnumerable<Item> GetItems() => _items;
 
-    public Item GetItemById(int id) => _items.FirstOrDefault(item => item.Id == id);
+    public Item GetItemById(int id)
+    {
+      var item = _items.FirstOrDefault(item => item.Id == id);
+      if (item == null)
+      {
+        throw new KeyNotFoundException("Item not found");
+      }
+      return item;
+    }
     public void AddItem(Item newItem)
     {
         newItem.Id = _items.Max(i => i.Id) + 1;
