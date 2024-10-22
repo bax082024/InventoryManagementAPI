@@ -36,6 +36,7 @@ namespace InventoryManagementAPI.Controllers
     public ActionResult AddItem([FromBody] Item newItem)
     {
       _inventoryService.AddItem(newItem);
+      return CreatedAtAction(nameof(GetItem), new {id = newItem.Id}, newItem);
     }
 
   }

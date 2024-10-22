@@ -26,7 +26,7 @@ namespace InventoryManagementAPI.Services
     public IEnumerable<Item> GetItems() => _items;
 
     public Item GetItemById(int id) => _items.FirstOrDefault(item => item.Id == id);
-    public void Additem(Item newItem)
+    public void AddItem(Item newItem)
     {
         newItem.Id = _items.Max(i => i.Id) + 1;
         _items.Add(newItem);
@@ -53,7 +53,12 @@ namespace InventoryManagementAPI.Services
         existingItem.Description = updatedItem.Description;
       }
     }
-  }
+
+        public void Additem(Item newItem)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 
 
