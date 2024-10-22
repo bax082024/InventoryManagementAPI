@@ -10,7 +10,16 @@ namespace InventoryManagementAPI.Controllers
   {
     private readonly IInventoryService _inventoryService;
 
-    public ItemsController()
+    public ItemsController(IInventoryService inventoryService)
+    {
+      _inventoryService = inventoryService;
+    }
+
+    [HttpGet]
+    public ActionResult<IEnumerable<Item>> GetItems()
+    {
+      return Ok(_inventoryService.GetItems());
+    }
 
   }
 
