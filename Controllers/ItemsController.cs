@@ -38,6 +38,27 @@ namespace InventoryManagementAPI.Controllers
       _inventoryService.AddItem(newItem);
       return CreatedAtAction(nameof(GetItem), new {id = newItem.Id}, newItem);
     }
+    
+    [HttpPost]
+    public ActionResult UpdateItem(int id, [FromBody] Item updatedItem)
+    {
+      if (id != updatedItem.Id )
+      {
+        return BadRequest();
+      }
+      _inventoryService.UpdateItem(updatedItem);
+      return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public ActionResult DeleteItem(int id)
+    {
+      _inventoryService.DeleteItem(id);
+      return NoContent();
+    }
+
+
+
 
   }
 

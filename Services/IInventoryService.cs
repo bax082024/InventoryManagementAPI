@@ -7,7 +7,7 @@ namespace InventoryManagementAPI.Services
   {
     IEnumerable<Item> GetItems();
     Item GetItemById(int id);
-    void Additem(Item newItem);
+    void AddItem(Item newItem);
     void UpdateItem(Item UpdatedItem);
     void DeleteItem(int id);
   }
