@@ -21,17 +21,17 @@ namespace InventoryManagementAPI.Controllers
       return Ok(_inventoryService.GetItems());
     }
 
-    [HttpGet]
-    public ActionResult<Item> GetItem(int id)
-    {
-      var items = item = _inventoryService.GetItemById(id);
-      if (item == null)
+    [HttpGet("{id}")]
+      public ActionResult<Item> GetItem(int id)
       {
-        return NotFound();
+        var item = _inventoryService.GetItemById(id);
+        if (item == null)
+        {
+          return NotFound();
+        }
+        return Ok(item);
       }
-      return Ok(item);
-    }
-    
+
   }
 
 }

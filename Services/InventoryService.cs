@@ -18,6 +18,7 @@ namespace InventoryManagementAPI.Services
         new Item {Id = 1, Name = "Sharpie Retractable S-Gel", Quantity = 12, Price = 180M, Description = "Sharpie S-Gel Retractable Gel Pen, Medium Point, Black Ink, Dozen"},
         new Item {Id = 1, Name = "Zebra Z-Grip Retractable Ballpoint", Quantity = 24, Price = 110M, Description = "Zebra Z-Grip Retractable Ballpoint Pen, Medium Point, 1.0mm, Black Ink, 24 Pack"},
         
+
       };
     }
 
