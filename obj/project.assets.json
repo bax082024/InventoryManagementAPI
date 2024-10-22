@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\busch\\Documents\\projects\\APIèr\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+      "projectUniqueName": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
       "projectName": "InventoryManagementAPI",
-      "projectPath": "C:\\Users\\busch\\Documents\\projects\\APIèr\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
+      "projectPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\InventoryManagementAPI\\InventoryManagementAPI.csproj",
       "packagesPath": "C:\\Users\\busch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\busch\\Documents\\projects\\APIèr\\InventoryManagementAPI\\obj\\",
+      "outputPath": "C:\\HjemmeKode\\C-Sharp\\C-Sharp\\InventoryManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\busch\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -551,7 +551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
