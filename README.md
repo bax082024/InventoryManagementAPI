@@ -17,27 +17,24 @@ http://localhost:5164/swagger
 
 ### packages:
 
-1. package Swashbuckle.AspNetCore (swagger)
+1. Swashbuckle.AspNetCore (swagger)
+2. Microsoft.EntityFrameworkCore
+3. Microsoft.EntityFrameworkCore.SqlServer
+4. Microsoft.EntityFrameworkCore.Tools
 
 
-
-**IDEAS** ( Ask Leah)!!!
+**IDEAS** 
 1. function to add or remove in bulk, not just 1 by 1 ?
 2. some type of login / password?
 3. if become bigger maybe need categorys? 
 4. possible to make a search function?
-5. connect to hanheld terminal for easy use?
 6. is it possible to add some kind of alert when "low stock"?
-7. use local storage / Database or SQL? SQL express??? 
 
 
 
 
 
 
-Packages
- Microsoft.EntityFrameworkCore
- Microsoft.EntityFrameworkCore.SqlServer
- Microsoft.EntityFrameworkCore.Tools
+
 
 
