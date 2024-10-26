@@ -30,3 +30,14 @@ http://localhost:5164/swagger
 6. is it possible to add some kind of alert when "low stock"?
 7. use local storage / Database or SQL? SQL express??? 
 
+
+
+
+
+
+Packages
+ Microsoft.EntityFrameworkCore
+ Microsoft.EntityFrameworkCore.SqlServer
+ Microsoft.EntityFrameworkCore.Tools
+
+
