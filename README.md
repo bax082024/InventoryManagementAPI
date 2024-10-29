@@ -23,12 +23,7 @@ http://localhost:5164/swagger
 4. Microsoft.EntityFrameworkCore.Tools
 
 
-**IDEAS** 
-1. function to add or remove in bulk, not just 1 by 1 ?
-2. some type of login / password?
-3. if become bigger maybe need categorys? 
-4. possible to make a search function?
-6. is it possible to add some kind of alert when "low stock"?
+
 
 
 
